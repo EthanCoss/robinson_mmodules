@@ -1,12 +1,13 @@
 [package]
-name = "robinson_modules_test"
-version = "0.1.0"
+name = "robinson_mmodules"
+version = "0.1.3"
 edition = "2021"
-description = "Test Version \nThis crate is a direct implementation of the algorithms presented in \"MODULES IN ROBINSON SPACES\" by MIKHAEL  CARMONA,  VICTOR  CHEPOI,  GUYSLAIN  NAVES AND PASCAL  PREA. \nIt can determine if a given square matrice admit a compatible order in O(n²). If it does admit at least one, this crate will provide you with a permutation corresponding to one compatible order."
+description = "This crate is a direct implementation of the algorithms presented in \"MODULES IN ROBINSON SPACES\" by MIKHAEL  CARMONA,  VICTOR  CHEPOI,  GUYSLAIN  NAVES AND PASCAL  PREA. \nIt can determine if a given square matrice admit a compatible order in O(n²). If it does admit at least one, this crate will provide you with a permutation corresponding to one compatible order."
 license = "MIT"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+readme = "README.md"
+homepage = "https://github.com/EthanCoss/robinson_mmodules"
+repository = "https://github.com/EthanCoss/robinson_mmodules"
+keywords = ["dissimilarity-space", "Seriation", "Classification", "Mmodule", "Divide-and-conquer"]
 
 [dependencies]
 avl = "0.7.1"
-rand = "0.8.5"

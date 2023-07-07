@@ -1,6 +1,6 @@
-extern crate robinson_modules_test;
+extern crate robinson_mmodules;
 
-use robinson_modules_test::{DistanceMatrice, Robin};
+use robinson_mmodules::{DistanceMatrice, Robin};
 
 mod test;
 use test::{fill_matrice, get_empty_distance_matrice, get_random_permutation};

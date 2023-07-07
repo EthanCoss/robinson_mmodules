@@ -251,7 +251,7 @@ pub mod robinson {
         ///
         /// Return true if the matrice admit a compatible order, false otherwise.
         ///
-        /// Stores the permutation (a compatible order if the distance matrice admit at least one) found in self.solved_permut
+        /// Stores the permutation (a compatible order if the distance matrice admit at least one) found in self.solved_permut. Be careful, it'll always store a permutation whether or not it admits a compatible order.
         ///
         /// If you want to resolve matrice bigger then a 1000x1000, you might need to increase your thread stack size. This is due to the depth of recursives function of this algorithm.
         pub fn resolve_robin(&mut self) -> bool {
@@ -285,6 +285,7 @@ pub mod robinson {
             }
         }
 
+        ///Return a new `DistanceMatrice` with the given permuation applied
         pub fn permut_matrice(&self, permut: &Vec<u32>) -> DistanceMatrice {
             let mut new_matrice = get_empty_distance_matrice(self.distance_mat.len() as u32);
 

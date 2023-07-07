@@ -1,7 +1,7 @@
 
 # Robinson
 
-This rust crate is a direct implementation of the algorithms presented in “MODULES IN ROBINSON SPACES” by MIKHAEL CARMONA, VICTOR CHEPOI, GUYSLAIN NAVES AND PASCAL PREA
+This rust crate is a direct implementation of the algorithms presented in “MODULES IN ROBINSON SPACES” by MIKHAEL CARMONA, VICTOR CHEPOI, GUYSLAIN NAVES AND PASCAL PREA.
 
 Given a dissimilarity space (~ what I call a DistanceMatrice), this algorithm can recognize if this dissimilarity space is Robinson.
 
@@ -12,25 +12,25 @@ Given a dissimilarity space (~ what I call a DistanceMatrice), this algorithm ca
 - Special thanks to [@FrancoisBrucker](https://github.com/FrancoisBrucker) and Pascal Préa who help me and provided me necesssary ressources.
 
 
-## Installation
+## Installation/Dependencies
 
-Install Robinson system wide with cargo using
+You can add robinson_mmodules to your dependencies using
 ```bash
-cargo install robinson
+cargo add robinson_mmodules
 ```
 in your project directory.
 
-And add Robinson to your dependencies in your cargo.toml file
+Or add Robinson to your dependencies directly in your cargo.toml file
 ```toml
 [dependencies]
-robinson_modules = "0.X.0"
+robinson_mmodules = "0.X.0"
 ```
 
 ## Usage/Examples
 
 ```rust
-extern crate robinson;
-use robinson::Robin;
+extern crate robinson_mmodules;
+use robinson_mmodules::Robin;
 
 fn main() {
     let my_matrice = vec![
@@ -52,9 +52,11 @@ fn main() {
 
 ```
 
+You can also find a more in depth exemple in the main.rs and test.rs file of this github repository. If you want to try this one yourself you'll need to add the rand crate to your depencies `rand = "0.8.5"`
+
 ## Documentation
 
-[Documentation](https://docs.rs/robinson_modules_test/latest/robinson_modules_test/)
+[Documentation](https://docs.rs/robinson_mmodules/latest/robinson_mmodules/)
 
 
 ## License
